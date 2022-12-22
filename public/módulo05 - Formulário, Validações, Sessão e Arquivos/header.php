@@ -1,8 +1,8 @@
 <h1 style="color: black;">Cabeçalho</h1>
 <?php
-if ($_COOKIE['name']) {
-    $name = $_COOKIE['Name'];
-    echo "<h2>{$nome}</h2>";
+if (isset($_COOKIE['name'])) {
+    $name = $_COOKIE['name'];
+    echo "<h2>{$name}</h2>";
 }
 ?>
 <hr/>

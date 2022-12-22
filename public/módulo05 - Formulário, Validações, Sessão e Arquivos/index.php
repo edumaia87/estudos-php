@@ -1,18 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 05</title>
-</head>
-<body style="background: white;">
-    <?php include 'header.php'; ?>
+<?php
+session_start();
+require('header.php');
 
-    <form method="POST" action="data.php">
-        <input type="text" name="name" placeholder="Informe seu nome">
-        <input type="email" name="email" placeholder="Informe seu e-mail">
-        <input type="number" name="age" placeholder="Informe sua idade">
-        <input type="submit" value="Enviar">
-    </form>
-</body>
-</html>
+if ($_SESSION['aviso']) {
+    echo $_SESSION['aviso'];
+    $_SESSION['aviso'] = '';
+}
+?>
+
+<a href="delete.php">Apagar cookie</a>
+
+<form method="POST" action="data.php">
+    <label for="name">Nome:</label>
+    <input type="text" name="name" placeholder="Informe seu nome">
+    <label for="name">E-mail:</label>
+    <input type="email" name="email" placeholder="Informe seu e-mail">
+    <label for="name">Idade:</label>
+    <input type="number" name="age" placeholder="Informe sua idade">
+    <input type="submit" value="Enviar">
+</form>
