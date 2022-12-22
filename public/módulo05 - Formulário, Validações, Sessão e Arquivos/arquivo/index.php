@@ -13,3 +13,7 @@ $text .= "\nEduardo Maia";
 
 file_put_contents('arq.txt', $text);
 echo 'Arquivo atualizado com sucesso!';
+
+// unlink(); Para deletar arquivos
+// rename(); Para renomear e mover arquivos
+// copy(); Para copiar arquivos
