@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @param Integer $n
- * @return String[]
+ * @param int $n
+ * @return string[]
  */
 function fizzBuzz($n): array
 {

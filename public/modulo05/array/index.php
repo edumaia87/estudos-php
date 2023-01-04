@@ -52,3 +52,5 @@ $values = array_values($array);
         <?php endforeach;?>
     </tr>
 </table>
+
+<a href="arrays2.php">Continuação arrays</a>
