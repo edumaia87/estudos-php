@@ -7,7 +7,7 @@ interface Database
     public function editProduct();
 }
 
-class MysqlDB implements Database
+/*class MysqlDB implements Database
 {
     public function listProduct()
     {
@@ -57,4 +57,4 @@ class MongoDB implements Database
 
 $db = new MysqlDB();
 
-$db->addProduct();
+$db->addProduct();*/
