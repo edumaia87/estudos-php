@@ -1,0 +1,16 @@
+{
+    "name": "eduardo/php-attributes",
+    "description": "PHP Attributes",
+    "authors": [
+        {
+            "name": "Eduardo Maia",
+            "email": "edumaia89@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
